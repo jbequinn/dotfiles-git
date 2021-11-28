@@ -1,0 +1,43 @@
+#[user]
+#  name = 
+#  email = 
+[core]
+  editor = nano
+  autocrlf = input
+[color]
+  branch = auto
+  diff = auto
+  status = auto
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+[alias]
+  br = branch
+  brd = branch -D
+  ci = commit
+  co = checkout
+  cob = checkout -b
+  cof = checkout --force
+  cofb = checkout --force -b
+  cp = cherry-pick
+  cpn = cherry-pick -n
+  discard = !git fetch --all && git reset --hard @{u} && git clean -df
+  feall = fetch --all
+  fepur = !git fetch --all && git pull --rebase
+  hardpull = !git reset --hard HEAD && git clean -df && git pull
+  hardreset = !git reset --hard HEAD && git clean -df
+  mash = merge --squash
+  pufo = push --force
+  pur = pull --rebase
+  rebi = git rebase --interactive @{u}
+  st = status
