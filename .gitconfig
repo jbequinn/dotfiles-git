@@ -1,9 +1,11 @@
 #[user]
-#  name = 
-#  email = 
+#  name =
+#  email =
 [core]
   editor = nano
   autocrlf = input
+[pull]
+  rebase = false
 [color]
   branch = auto
   diff = auto
