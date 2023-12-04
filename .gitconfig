@@ -39,7 +39,7 @@
   hardpull = !git reset --hard HEAD && git clean -df && git pull
   hardreset = !git reset --hard HEAD && git clean -df
   mash = merge --squash
-  pufo = push --force
+  pufo = !git fetch --all && git push --force-with-lease
   pur = pull --rebase
   rebi = git rebase --interactive @{u}
   st = status
